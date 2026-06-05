@@ -1,0 +1,104 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+.decor-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link {
+  position: relative;
+  padding-block: 0.5rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -0.72rem;
+  height: 3px;
+  border-radius: 999px;
+  background: transparent;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  background: #ff5a0a;
+}
+
+[data-mobile-menu] a {
+  display: block;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
+  font-weight: 800;
+}
+
+[data-mobile-menu] a:hover {
+  background: #f8fafc;
+}
+
+.decor-line::before,
+.decor-line::after {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  pointer-events: none;
+  opacity: 0.18;
+  background:
+    radial-gradient(circle at center, transparent 56%, #09a8b6 57%, transparent 58%),
+    repeating-radial-gradient(circle at center, transparent 0 18px, rgba(9, 168, 182, 0.35) 19px 20px, transparent 21px 38px);
+}
+
+.decor-line::before {
+  left: -9rem;
+  bottom: -10rem;
+}
+
+.decor-line::after {
+  right: -9rem;
+  top: 20%;
+}
+
+.comparison-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  padding: 1.6rem;
+}
+
+.social {
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  color: #0f172a;
+  transition: background 160ms ease, color 160ms ease, border 160ms ease;
+}
+
+.social:hover {
+  border-color: #09a8b6;
+  background: #ecfeff;
+  color: #09a8b6;
+}
+
+@media (max-width: 767px) {
+  .decor-line::before,
+  .decor-line::after {
+    width: 13rem;
+    height: 13rem;
+  }
+}

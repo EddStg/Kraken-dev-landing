@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kraken Dev | Desarrollo web moderno en México</title>
+    <meta
+      name="description"
+      content="Desarrollo de landing pages, páginas web, PWA y sistemas a medida para negocios que quieren verse profesionales, cargar rápido y convertir más."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Kraken Dev" />
+    <meta name="theme-color" content="#ff5a0a" />
+    <meta
+      name="keywords"
+      content="desarrollo web, landing pages, páginas web, PWA, sistemas a medida, diseño web, Kraken Dev, Lázaro Cárdenas, Michoacán"
+    />
+    <link rel="canonical" href="https://krakendev.com/" />
+    <link rel="icon" href="./assets/kraken-symbol.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Kraken Dev" />
+    <meta property="og:title" content="Kraken Dev | Desarrollo web moderno en México" />
+    <meta
+      property="og:description"
+      content="Landing pages, páginas web, PWA y sistemas a medida con enfoque en diseño, velocidad y conversión."
+    />
+    <meta property="og:url" content="https://krakendev.com/" />
+    <meta property="og:image" content="https://krakendev.com/assets/hero-logistics-mockup.png" />
+    <meta property="og:image:alt" content="Mockup de página web desarrollada por Kraken Dev" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kraken Dev | Desarrollo web moderno en México" />
+    <meta
+      name="twitter:description"
+      content="Webs rápidas, profesionales y pensadas para convertir visitantes en clientes."
+    />
+    <meta name="twitter:image" content="https://krakendev.com/assets/hero-logistics-mockup.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="./assets/hero-logistics-mockup.png" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Manrope", "ui-sans-serif", "system-ui"] },
+            colors: {
+              kraken: {
+                orange: "#ff5a0a",
+                orange2: "#ff7a1a",
+                teal: "#09a8b6",
+                ink: "#070b18",
+                muted: "#5d6473",
+              },
+            },
+            boxShadow: {
+              soft: "0 18px 55px rgba(7, 11, 24, 0.12)",
+              card: "0 14px 35px rgba(7, 11, 24, 0.08)",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kraken Dev",
+        "url": "https://krakendev.com/",
+        "logo": "https://krakendev.com/assets/kraken-symbol.svg",
+        "image": "https://krakendev.com/assets/hero-logistics-mockup.png",
+        "description": "Desarrollo de landing pages, páginas web, PWA y sistemas a medida con enfoque en diseño, velocidad y conversión.",
+        "email": "kraken.dev2@gmail.com",
+        "telephone": "+527531111114",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lázaro Cárdenas",
+          "addressRegion": "Michoacán",
+          "addressCountry": "MX"
+        },
+        "areaServed": "MX",
+        "sameAs": [],
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing pages" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Páginas web" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Desarrollo PWA" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas a medida" } }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-white font-sans text-kraken-ink antialiased">
+    <div class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_20%_10%,rgba(9,168,182,0.08),transparent_24rem),radial-gradient(circle_at_88%_4%,rgba(255,90,10,0.07),transparent_21rem)]"></div>
+
+    <header class="sticky top-4 z-50 mx-auto w-[min(92rem,calc(100%-2rem))]">
+      <nav class="flex items-center justify-between rounded-2xl border border-slate-200/70 bg-white/90 px-4 py-3 shadow-soft backdrop-blur md:px-7">
+        <a href="#inicio" class="flex items-center gap-3" aria-label="Inicio de Kraken Dev">
+          <img src="./assets/kraken-symbol.svg" alt="" class="h-11 w-[4.25rem] shrink-0 object-contain sm:h-12 sm:w-20" aria-hidden="true" />
+          <span class="text-xl font-extrabold tracking-normal sm:text-2xl">Kraken <span class="text-kraken-teal">Dev</span></span>
+        </a>
+        <div class="hidden items-center gap-10 text-sm font-semibold text-slate-700 md:flex">
+          <a class="nav-link" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#servicios">Servicios</a>
+          <a class="nav-link" href="#proceso">Proceso</a>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </div>
+        <a href="#contacto" class="hidden rounded-xl bg-kraken-orange px-6 py-3 text-sm font-extrabold text-white shadow-lg shadow-orange-500/25 transition hover:bg-orange-600 md:inline-flex">Cotizar proyecto</a>
+        <button class="grid size-11 place-items-center rounded-xl border border-slate-200 md:hidden" data-menu-button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
+          <i data-lucide="menu" class="size-5"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" data-mobile-menu class="mt-2 hidden rounded-2xl border border-slate-200 bg-white p-3 shadow-card md:hidden">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="decor-line relative overflow-hidden px-4 pb-16 pt-14 md:pb-20 md:pt-20">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="max-w-2xl">
+            <h1 class="text-4xl font-extrabold leading-tight tracking-normal sm:text-5xl lg:text-6xl">
+              Desarrollo web moderno para <span class="text-kraken-teal">negocios</span> que quieren verse profesionales y <span class="text-kraken-orange">vender más</span>
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-kraken-muted">
+              Landing pages, páginas web, PWA y sistemas a medida con enfoque en diseño, velocidad y conversión.
+            </p>
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a href="#contacto" class="inline-flex items-center justify-center gap-3 rounded-xl bg-kraken-orange px-7 py-4 font-extrabold text-white shadow-lg shadow-orange-500/25 transition hover:bg-orange-600">
+                Quiero una web que venda <i data-lucide="arrow-right" class="size-5"></i>
+              </a>
+              <a href="#servicios" class="inline-flex items-center justify-center gap-3 rounded-xl border border-kraken-teal px-7 py-4 font-extrabold text-kraken-teal transition hover:bg-cyan-50">
+                Ver servicios <i data-lucide="arrow-right" class="size-5"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="relative min-h-[34rem] lg:min-h-[38rem]">
+            <img src="./assets/hero-logistics-mockup.png" alt="Mockup de sitio web logístico desarrollado por Kraken Dev" width="1536" height="1024" fetchpriority="high" class="absolute left-1/2 top-6 w-[min(45rem,100%)] -translate-x-1/2 rounded-2xl shadow-soft" />
+            <div class="absolute left-0 top-10 hidden rounded-2xl bg-white p-5 shadow-card md:block">
+              <div class="flex items-center gap-3 text-lg font-extrabold"><i data-lucide="zap" class="size-7 text-kraken-teal"></i> PWA</div>
+            </div>
+            <div class="absolute left-2 top-40 hidden rounded-2xl bg-white p-5 shadow-card md:block">
+              <i data-lucide="layout-template" class="mx-auto mb-2 size-8 text-kraken-teal"></i>
+              <p class="font-extrabold">UI/UX</p>
+            </div>
+            <div class="absolute right-0 top-20 hidden rounded-2xl bg-white p-5 text-center shadow-card md:block">
+              <i data-lucide="smartphone" class="mx-auto mb-2 size-8 text-kraken-teal"></i>
+              <p class="font-extrabold">Responsive</p>
+            </div>
+            <div class="absolute right-3 top-56 hidden rounded-2xl bg-white p-5 text-center shadow-card md:block">
+              <i data-lucide="chart-no-axes-combined" class="mx-auto mb-2 size-8 text-kraken-teal"></i>
+              <p class="font-extrabold">Conversión</p>
+            </div>
+            <div class="absolute bottom-24 left-4 w-44 rounded-2xl bg-white p-5 shadow-card sm:bottom-16 sm:left-8">
+              <p class="text-sm font-semibold text-slate-600">Rendimiento</p>
+              <p class="mt-2 text-4xl font-extrabold text-kraken-teal">99<span class="text-xl text-slate-500">/100</span></p>
+              <p class="mt-2 text-sm text-slate-600">Velocidad de carga</p>
+              <div class="mt-4 h-2 rounded-full bg-slate-100"><div class="h-2 w-[92%] rounded-full bg-kraken-teal"></div></div>
+            </div>
+            <div class="absolute bottom-4 left-1/2 w-52 -translate-x-1/2 rounded-2xl bg-white p-5 shadow-card">
+              <p class="text-sm font-semibold text-slate-600">Conversiones</p>
+              <p class="mt-2 text-3xl font-extrabold text-kraken-teal">+127%</p>
+              <svg viewBox="0 0 180 70" class="mt-2 h-16 w-full" fill="none" aria-hidden="true">
+                <path d="M4 62C28 54 31 37 53 43c20 5 24 12 43-14 18-24 31 17 49 4 15-10 19-25 28-30" stroke="#09a8b6" stroke-width="4" stroke-linecap="round" />
+                <path d="M4 62C28 54 31 37 53 43c20 5 24 12 43-14 18-24 31 17 49 4 15-10 19-25 28-30V70H4Z" fill="url(#chartGradient)" />
+                <defs><linearGradient id="chartGradient" x1="90" y1="3" x2="90" y2="70"><stop stop-color="#09a8b6" stop-opacity=".25" /><stop offset="1" stop-color="#09a8b6" stop-opacity="0" /></linearGradient></defs>
+              </svg>
+            </div>
+            <div class="absolute bottom-16 right-0 w-48 rounded-2xl bg-white p-4 shadow-card sm:right-10">
+              <div class="flex items-center gap-3">
+                <div class="size-14 rounded-full" style="background: conic-gradient(#ff5a0a 0 34%, #09a8b6 34% 70%, #e8eef3 70% 100%);"></div>
+                <div><p class="text-xs text-slate-500">Tasa de</p><p class="text-2xl font-extrabold">4.8%</p><p class="text-xs font-bold text-emerald-600">Excelente</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-slate-200/80 bg-white/80 px-4 py-10">
+        <div class="mx-auto max-w-7xl">
+          <h2 class="text-center text-2xl font-extrabold md:text-3xl">Tu web <span class="text-kraken-orange">no debería</span> ser solo una tarjeta de presentación</h2>
+          <div id="pain-points" class="mt-7 grid gap-5 md:grid-cols-3"></div>
+          <noscript>
+            <div class="mt-7 grid gap-5 md:grid-cols-3">
+              <article><h3>Diseño sin estrategia</h3><p>Sitios bonitos que no comunican tu propuesta de valor ni guían a la acción.</p></article>
+              <article><h3>Poca confianza</h3><p>Webs desactualizadas, lentas o poco profesionales que alejan a tus clientes.</p></article>
+              <article><h3>Cero conversión</h3><p>Mucho tráfico, pero sin resultados. Tu web no convierte visitas en clientes.</p></article>
+            </div>
+          </noscript>
+        </div>
+      </section>
+
+      <section id="servicios" class="px-4 py-12">
+        <div class="mx-auto max-w-7xl">
+          <h2 class="text-center text-2xl font-extrabold md:text-3xl">Soluciones web para <span class="text-kraken-teal">cada etapa</span> de tu negocio</h2>
+          <div id="services" class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+          <noscript>
+            <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <li><strong>Landing pages:</strong> páginas enfocadas en convertir visitantes en clientes.</li>
+              <li><strong>Páginas web:</strong> sitios corporativos modernos, rápidos y optimizados para SEO.</li>
+              <li><strong>Desarrollo PWA:</strong> aplicaciones rápidas, instalables y offline.</li>
+              <li><strong>Sistemas a medida:</strong> plataformas personalizadas para automatizar tu negocio.</li>
+            </ul>
+          </noscript>
+        </div>
+      </section>
+
+      <section class="decor-line px-4 py-10">
+        <div class="mx-auto grid max-w-7xl items-center gap-8 rounded-3xl border border-slate-200 bg-white p-6 shadow-soft md:p-10 lg:grid-cols-[0.95fr_1.35fr]">
+          <div>
+            <h2 class="text-3xl font-extrabold leading-tight md:text-4xl">No uso plantillas vacías. Construyo experiencias digitales <span class="text-kraken-teal">con dirección</span></h2>
+            <p class="mt-5 leading-7 text-kraken-muted">Cada proyecto es estratégico, rápido y pensado para generar resultados reales. Diseño, desarrollo y optimización enfocados en tu negocio, no en el ego.</p>
+            <div id="value-icons" class="mt-7 grid gap-4 sm:grid-cols-3"></div>
+          </div>
+          <div class="relative grid gap-5 md:grid-cols-2">
+            <div id="generic-list" class="comparison-card bg-slate-50"></div>
+            <div id="kraken-list" class="comparison-card border-kraken-teal/30 bg-white shadow-card"></div>
+            <span class="absolute left-1/2 top-1/2 hidden size-14 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-sm font-extrabold shadow-card md:grid">VS</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="decor-line px-4 py-12">
+        <div class="mx-auto max-w-7xl">
+          <h2 class="text-center text-2xl font-extrabold md:text-3xl">Un proceso claro <span class="text-kraken-teal">desde la idea</span> hasta el <span class="text-kraken-orange">lanzamiento</span></h2>
+          <div id="process" class="relative mt-10 grid gap-8 md:grid-cols-5"></div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="px-4 py-12">
+        <div class="mx-auto max-w-7xl">
+          <h2 class="text-center text-2xl font-extrabold md:text-3xl">Diseños pensados para <span class="text-kraken-teal">verse diferentes</span> y <span class="text-kraken-orange">vender mejor</span></h2>
+          <div id="projects" class="mt-8 grid gap-7 md:grid-cols-3"></div>
+          <noscript>
+            <ul class="mt-8 grid gap-5 md:grid-cols-3">
+              <li>Proyecto de landing page para clínica estética.</li>
+              <li>Proyecto de sitio web para logística.</li>
+              <li>Sistema web para gimnasio con panel administrativo.</li>
+            </ul>
+          </noscript>
+        </div>
+      </section>
+
+      <section id="contacto" class="px-4 py-8">
+        <div class="relative mx-auto flex max-w-7xl flex-col gap-6 overflow-hidden rounded-3xl bg-slate-900 p-8 text-white shadow-soft md:flex-row md:items-center md:justify-between md:p-10">
+          <img src="./assets/cta-octopus-banner.png" alt="" width="1983" height="793" loading="lazy" class="absolute inset-0 size-full object-cover opacity-95" />
+          <div class="relative max-w-2xl">
+            <p class="text-3xl font-extrabold leading-tight md:text-4xl">¿Listo para que tu negocio tenga una web que sí transmita profesionalismo?</p>
+          </div>
+          <div class="relative">
+            <a href="https://wa.me/527531111114?text=Hola%2C%20quiero%20cotizar%20un%20proyecto%20que%20deseo%20desarrollar%21" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 rounded-xl bg-white px-8 py-4 font-extrabold text-kraken-ink shadow-card transition hover:bg-slate-100">
+              Solicitar cotización <i data-lucide="arrow-right" class="size-5"></i>
+            </a>
+            <p class="mt-4 flex items-center gap-2 text-sm font-semibold"><i data-lucide="clock-3" class="size-4"></i> Respuesta en menos de 24 horas</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-6 border-t border-slate-200 px-4 py-10">
+      <div class="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
+        <div>
+          <div class="flex items-center gap-3 text-2xl font-extrabold">
+            <img src="./assets/kraken-symbol.svg" alt="" class="h-11 w-[4.5rem] shrink-0 object-contain" aria-hidden="true" />
+            Kraken <span class="-ml-2 text-kraken-teal">Dev</span>
+          </div>
+          <p class="mt-4 max-w-xs text-sm leading-6 text-kraken-muted">Desarrollo web moderno con enfoque en diseño, velocidad y conversión.</p>
+        </div>
+        <div>
+          <h3 class="font-extrabold">Navegación</h3>
+          <div class="mt-4 grid gap-3 text-sm text-slate-600">
+            <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-extrabold">Contacto</h3>
+          <div class="mt-4 grid gap-3 text-sm text-slate-600">
+            <a href="mailto:kraken.dev2@gmail.com">kraken.dev2@gmail.com</a>
+            <a href="tel:+527531111114">+52 753 111 1114</a>
+            <span>Lázaro Cárdenas, Michoacán. México</span>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-extrabold">Sígueme</h3>
+          <div class="mt-4 flex gap-3">
+            <a class="social" href="#" aria-label="LinkedIn"><i data-lucide="linkedin" class="size-4"></i></a>
+            <a class="social" href="#" aria-label="Instagram"><i data-lucide="instagram" class="size-4"></i></a>
+            <a class="social" href="#" aria-label="GitHub"><i data-lucide="github" class="size-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="mx-auto mt-8 max-w-7xl text-center text-sm text-slate-500">© 2026 Kraken Dev. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>

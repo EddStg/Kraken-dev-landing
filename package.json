@@ -1,0 +1,11 @@
+{
+  "name": "kraken-dev-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page estática de Kraken Dev.",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve .",
+    "build": "echo \"Static site: no build required\""
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Kraken Dev",
+  "short_name": "Kraken Dev",
+  "description": "Desarrollo web moderno con enfoque en diseño, velocidad y conversión.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff5a0a",
+  "icons": [
+    {
+      "src": "/assets/kraken-symbol.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
