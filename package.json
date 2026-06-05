@@ -4,8 +4,11 @@
   "private": true,
   "description": "Landing page estática de Kraken Dev.",
   "scripts": {
-    "start": "npx serve .",
-    "dev": "npx serve .",
-    "build": "echo \"Static site: no build required\""
+    "dev": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "preview": "npx serve ."
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }

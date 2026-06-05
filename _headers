@@ -9,3 +9,6 @@
 
 /src/*
   Cache-Control: public, max-age=604800
+
+/dist/*
+  Cache-Control: public, max-age=604800
