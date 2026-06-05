@@ -15,7 +15,7 @@
       name="keywords"
       content="desarrollo web, landing pages, páginas web, PWA, sistemas a medida, diseño web, Kraken Dev, Lázaro Cárdenas, Michoacán"
     />
-    <link rel="canonical" href="https://krakendev.com/" />
+    <link rel="canonical" href="https://krakendev.netlify.app/" />
     <link rel="icon" href="./assets/kraken-symbol.svg" type="image/svg+xml" />
     <link rel="manifest" href="./site.webmanifest" />
     <meta property="og:type" content="website" />
@@ -26,8 +26,8 @@
       property="og:description"
       content="Landing pages, páginas web, PWA y sistemas a medida con enfoque en diseño, velocidad y conversión."
     />
-    <meta property="og:url" content="https://krakendev.com/" />
-    <meta property="og:image" content="https://krakendev.com/assets/hero-logistics-mockup.png" />
+    <meta property="og:url" content="https://krakendev.netlify.app/" />
+    <meta property="og:image" content="https://krakendev.netlify.app/assets/hero-logistics-mockup.png" />
     <meta property="og:image:alt" content="Mockup de página web desarrollada por Kraken Dev" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Kraken Dev | Desarrollo web moderno en México" />
@@ -35,13 +35,14 @@
       name="twitter:description"
       content="Webs rápidas, profesionales y pensadas para convertir visitantes en clientes."
     />
-    <meta name="twitter:image" content="https://krakendev.com/assets/hero-logistics-mockup.png" />
+    <meta name="twitter:image" content="https://krakendev.netlify.app/assets/hero-logistics-mockup.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./assets/hero-logistics-mockup.png" />
     <script>
-      tailwind.config = {
+      window.tailwind = {
+        config: {
         theme: {
           extend: {
             fontFamily: { sans: ["Manrope", "ui-sans-serif", "system-ui"] },
@@ -60,6 +61,7 @@
             },
           },
         },
+        },
       };
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -70,9 +72,9 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Kraken Dev",
-        "url": "https://krakendev.com/",
-        "logo": "https://krakendev.com/assets/kraken-symbol.svg",
-        "image": "https://krakendev.com/assets/hero-logistics-mockup.png",
+        "url": "https://krakendev.netlify.app/",
+        "logo": "https://krakendev.netlify.app/assets/kraken-symbol.svg",
+        "image": "https://krakendev.netlify.app/assets/hero-logistics-mockup.png",
         "description": "Desarrollo de landing pages, páginas web, PWA y sistemas a medida con enfoque en diseño, velocidad y conversión.",
         "email": "kraken.dev2@gmail.com",
         "telephone": "+527531111114",

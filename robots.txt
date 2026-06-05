@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://krakendev.com/sitemap.xml
+Sitemap: https://krakendev.netlify.app/sitemap.xml
