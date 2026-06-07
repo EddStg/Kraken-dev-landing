@@ -1,6 +1,6 @@
 # Kraken Dev Landing
 
-Landing page estática para Kraken Dev con Tailwind CSS compilado localmente.
+Landing page estática para Kraken Dev con Tailwind CSS compilado localmente y una base SEO orientada a servicios de desarrollo web en México.
 
 ## Archivos principales
 
@@ -33,3 +33,10 @@ Si el dominio final cambia y deja de ser `https://krakendev.netlify.app/`, actua
 - `index.html`: `canonical`, `og:url`, `og:image`, `twitter:image` y JSON-LD.
 - `robots.txt`: URL del sitemap.
 - `sitemap.xml`: URL principal.
+
+## Después de publicar
+
+1. Verifica el dominio en Google Search Console.
+2. Envía `https://krakendev.netlify.app/sitemap.xml`.
+3. Inspecciona la URL principal y solicita su indexación.
+4. Conecta un dominio propio cuando sea posible y actualiza todas las URLs canónicas.
